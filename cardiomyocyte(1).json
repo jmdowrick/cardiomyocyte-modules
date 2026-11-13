@@ -256,8 +256,8 @@
                 "species": [
                   "CHEBI:29108"
                 ],
-                "location": "self",
-                "role": "owner",
+                "location": "GO:0005737",
+                "role": "reader",
                 "source": {
                   "kind": "sidecar",
                   "mathRef": "Ca_buffer.cellml:Ca_buffer"
@@ -460,8 +460,8 @@
           "parameterisation": "Ca_buffer",
           "bioView": {
             "position": {
-              "x": 161,
-              "y": 212
+              "x": 139,
+              "y": 211
             },
             "role": "cytosolic"
           }
@@ -10136,10 +10136,10 @@
           ],
           "parameterisation": "stimulus",
           "bioView": {
-            "order": 7,
-            "cell": "dndnode_2",
             "facet": "apical",
-            "role": "membraneProtein"
+            "role": "membraneProtein",
+            "order": 7,
+            "cell": "dndnode_2"
           }
         }
       }
@@ -10275,7 +10275,7 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 519.493564089742,
+        "sourceX": 519.4935386314835,
         "sourceY": 247.3252563785529,
         "targetX": 930.1935156059036,
         "targetY": 94.10851144506168
@@ -10381,7 +10381,7 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 519.493564089742,
+        "sourceX": 519.4935386314835,
         "sourceY": 222.32657026336778,
         "targetX": 642.9343967382737,
         "targetY": 460.5215367317004
@@ -11027,7 +11027,7 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 552.263344126398,
+        "sourceX": 552.2633950429152,
         "sourceY": 489.1089931831587,
         "targetX": 930.1935156059036,
         "targetY": 119.10719756024679
@@ -11133,7 +11133,7 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 552.263344126398,
+        "sourceX": 552.2633950429152,
         "sourceY": 464.1103070679736,
         "targetX": 642.9343967382737,
         "targetY": 435.52295244954973
@@ -11247,7 +11247,7 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 1192.0081682219522,
+        "sourceX": 1192.0082700549867,
         "sourceY": 356.2875512268988,
         "targetX": 988.3309086563559,
         "targetY": 160.11540864421568
@@ -11781,7 +11781,7 @@
         },
         "sourceX": 125.72550961552508,
         "sourceY": 126.49434102566022,
-        "targetX": 307.22821027364853,
+        "targetX": 307.22818481538997,
         "targetY": 247.3252563785529
       },
       {
@@ -11838,6 +11838,52 @@
                   }
                 }
               }
+            },
+            {
+              "sourcePort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "mu_Cai"
+                ],
+                "multiportType": "True",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/Ca_buffer.cellml#b4da56",
+                  "variable": "mu_Cai",
+                  "property": "OPB:00378",
+                  "species": [
+                    "CHEBI:29108"
+                  ],
+                  "location": "GO:0005737",
+                  "role": "reader",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "Ca_buffer.cellml:Ca_buffer"
+                  }
+                }
+              },
+              "targetPort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "mu_Cai"
+                ],
+                "multiportType": "True",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/intracellular.cellml#b4da5b",
+                  "variable": "mu_Cai",
+                  "property": "OPB:00378",
+                  "species": [
+                    "CHEBI:29108"
+                  ],
+                  "location": "self",
+                  "role": "owner",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "intracellular.cellml:intracellular"
+                  }
+                }
+              }
             }
           ],
           "placement": false
@@ -11847,8 +11893,8 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 582.0004259367558,
-        "sourceY": 75.24974308436475,
+        "sourceX": 582.0004513950144,
+        "sourceY": 75.24971762610616,
         "targetX": 1063.3269670019113,
         "targetY": 28.129414664298267
       },
@@ -12169,7 +12215,7 @@
         },
         "sourceX": 75.72816284341349,
         "sourceY": 126.49434102566022,
-        "targetX": 340.27599449421024,
+        "targetX": 340.27607086898604,
         "targetY": 489.1089931831587
       },
       {
@@ -12581,7 +12627,7 @@
         },
         "sourceX": 25.7307906130433,
         "sourceY": 126.49434102566022,
-        "targetX": 730.1935156059036,
+        "targetX": 730.1934646893865,
         "targetY": 634.1076792983438
       },
       {
@@ -13013,7 +13059,7 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 836.1871395054803,
+        "sourceX": 836.1870885889631,
         "sourceY": 543.1020450674876,
         "targetX": 1063.3269670019113,
         "targetY": 160.11540864421568
@@ -13244,27 +13290,7 @@
               }
             }
           ],
-          "placement": "exchange",
-          "manualCouplings": [
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "I_mem",
-                "variables": [
-                  "I_mem_stim"
-                ],
-                "multiportType": "None"
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "I_mem",
-                "variables": [
-                  "I_mem"
-                ],
-                "multiportType": "Sum"
-              }
-            }
-          ]
+          "placement": "exchange"
         },
         "label": "",
         "markerEnd": "arrowclosed",
@@ -96070,7 +96096,7 @@
       ],
       [
         "Ca_buffer.cellml:Ca_buffer",
-        "@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .\n@prefix semsim: <http://bime.uw.edu/semsim/> .\n@prefix opb: <https://identifiers.org/opb/OPB_> .\n@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .\n@prefix go: <https://identifiers.org/go/GO:> .\n@prefix m: <./Ca_buffer.cellml#> .\n@prefix local: <./Ca_buffer.ttl#> .\n\nlocal:inside bqbiol:is go:0005737 .\nm:b4da56 bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:Ca_self .\nlocal:Ca_self bqbiol:is chebi:29108 ;\n    bqbiol:isPartOf local:entity_self .\nm:b4da55 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da55 .\nlocal:process_b4da55 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Ca_in ] .\nlocal:Ca_in bqbiol:is chebi:29108 ;\n    bqbiol:isPartOf local:inside .\n"
+        "@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .\n@prefix semsim: <http://bime.uw.edu/semsim/> .\n@prefix opb: <https://identifiers.org/opb/OPB_> .\n@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .\n@prefix go: <https://identifiers.org/go/GO:> .\n@prefix m: <./Ca_buffer.cellml#> .\n@prefix local: <./Ca_buffer.ttl#> .\n\nlocal:inside bqbiol:is go:0005737 .\nm:b4da56 bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:Ca_in .\nlocal:Ca_in bqbiol:is chebi:29108 ;\n    bqbiol:isPartOf local:inside .\nm:b4da55 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da55 .\nlocal:process_b4da55 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Ca_in ] .\n"
       ],
       [
         "membrane.cellml:membrane",
@@ -96086,14 +96112,105 @@
     "simulationSettings": {
       "pointInterval": 0.001,
       "startingPoint": 0,
-      "endingPoint": 10,
+      "endingPoint": 25,
       "initialPoint": 0,
       "solver": "CVODE",
       "timeStep": 0.001,
       "tolerance": 1e-12,
       "maxSteps": 10000
     },
-    "plotConfig": {},
+    "plotConfig": {
+      "groups": [
+        {
+          "id": "plot-1",
+          "name": "Plot 1"
+        },
+        {
+          "id": "plot-1c846c6b-cfff-41b0-a3eb-48087b217487",
+          "name": "Plot 2"
+        },
+        {
+          "id": "plot-f00da728-b2d4-4b02-9e0c-4e9f89fd665e",
+          "name": "Plot 3"
+        }
+      ],
+      "groupedSelections": [
+        {
+          "id": "plot-1",
+          "name": "Plot 1",
+          "selections": [
+            {
+              "key": "dndnode_7::V_mem",
+              "nodeId": "dndnode_7",
+              "nodeName": "membrane",
+              "variableName": "V_mem",
+              "units": "volt",
+              "type": "variable",
+              "plot": true,
+              "groupId": "plot-1"
+            }
+          ]
+        },
+        {
+          "id": "plot-1c846c6b-cfff-41b0-a3eb-48087b217487",
+          "name": "Plot 2",
+          "selections": [
+            {
+              "key": "dndnode_4::I_mem_K1",
+              "nodeId": "dndnode_4",
+              "nodeName": "K1_channel",
+              "variableName": "I_mem_K1",
+              "units": "fA",
+              "type": "variable",
+              "plot": true,
+              "groupId": "plot-1c846c6b-cfff-41b0-a3eb-48087b217487"
+            },
+            {
+              "key": "dndnode_5::I_mem_Kp",
+              "nodeId": "dndnode_5",
+              "nodeName": "Kp_channel",
+              "variableName": "I_mem_Kp",
+              "units": "fA",
+              "type": "variable",
+              "plot": true,
+              "groupId": "plot-1c846c6b-cfff-41b0-a3eb-48087b217487"
+            }
+          ]
+        }
+      ],
+      "selections": [
+        {
+          "key": "dndnode_7::V_mem",
+          "nodeId": "dndnode_7",
+          "nodeName": "membrane",
+          "variableName": "V_mem",
+          "units": "volt",
+          "type": "variable",
+          "plot": true,
+          "groupId": "plot-1"
+        },
+        {
+          "key": "dndnode_4::I_mem_K1",
+          "nodeId": "dndnode_4",
+          "nodeName": "K1_channel",
+          "variableName": "I_mem_K1",
+          "units": "fA",
+          "type": "variable",
+          "plot": true,
+          "groupId": "plot-1c846c6b-cfff-41b0-a3eb-48087b217487"
+        },
+        {
+          "key": "dndnode_5::I_mem_Kp",
+          "nodeId": "dndnode_5",
+          "nodeName": "Kp_channel",
+          "variableName": "I_mem_Kp",
+          "units": "fA",
+          "type": "variable",
+          "plot": true,
+          "groupId": "plot-1c846c6b-cfff-41b0-a3eb-48087b217487"
+        }
+      ]
+    },
     "parameterScanConfig": {
       "selections": []
     }
