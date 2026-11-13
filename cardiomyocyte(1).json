@@ -927,7 +927,7 @@
               "side": "right",
               "name": "",
               "slotIndex": 1,
-              "variant": "ghost"
+              "variant": "default"
             },
             {
               "uid": "7a0bbbb9-007e-4a73-bda0-65740312021e",
@@ -2671,8 +2671,10 @@
               "units": "fmol",
               "access": "access",
               "value": "",
-              "type": "boundary_condition",
-              "data_reference": null
+              "type": "variable",
+              "data_reference": null,
+              "initialiser": "x_C_K1_init",
+              "stateRole": "state"
             },
             {
               "name": "mu_O_K1",
@@ -2695,8 +2697,10 @@
               "units": "fmol",
               "access": "access",
               "value": "",
-              "type": "boundary_condition",
-              "data_reference": null
+              "type": "variable",
+              "data_reference": null,
+              "initialiser": "x_O_K1_init",
+              "stateRole": "state"
             },
             {
               "name": "Am_K1",
@@ -2803,6 +2807,14 @@
               "data_reference": "Pan2018; doi:10.1098/rspa.2018.0106"
             },
             {
+              "name": "t",
+              "units": "second",
+              "access": "access",
+              "value": "",
+              "type": "variable",
+              "data_reference": null
+            },
+            {
               "name": "v_Ke_K1",
               "units": "fmol_per_s",
               "access": "access",
@@ -2824,6 +2836,22 @@
               "access": "access",
               "value": "",
               "type": "variable",
+              "data_reference": null
+            },
+            {
+              "name": "x_C_K1_init",
+              "units": "fmol",
+              "access": "no_access",
+              "value": "5.6606e-06",
+              "type": "constant",
+              "data_reference": null
+            },
+            {
+              "name": "x_O_K1_init",
+              "units": "fmol",
+              "access": "no_access",
+              "value": "1.4151e-06",
+              "type": "constant",
               "data_reference": null
             }
           ],
@@ -2954,50 +2982,6 @@
                 "species": [],
                 "location": "GO:0005886",
                 "role": "contributor",
-                "source": {
-                  "kind": "sidecar",
-                  "mathRef": "K1_channel.cellml:K1_channel"
-                }
-              }
-            },
-            {
-              "portType": "general_ports",
-              "label": "",
-              "variables": [
-                "x_C_K1"
-              ],
-              "multiportType": "True",
-              "annotation": {
-                "subject": "https://phlynx.invalid/modules/K1_channel.cellml#b4da59",
-                "variable": "x_C_K1",
-                "property": "OPB:00425",
-                "species": [
-                  "CHEBI:29103"
-                ],
-                "location": "GO:0005737",
-                "role": "reader",
-                "source": {
-                  "kind": "sidecar",
-                  "mathRef": "K1_channel.cellml:K1_channel"
-                }
-              }
-            },
-            {
-              "portType": "general_ports",
-              "label": "",
-              "variables": [
-                "x_O_K1"
-              ],
-              "multiportType": "True",
-              "annotation": {
-                "subject": "https://phlynx.invalid/modules/K1_channel.cellml#b4da5a",
-                "variable": "x_O_K1",
-                "property": "OPB:00425",
-                "species": [
-                  "CHEBI:29103"
-                ],
-                "location": "GO:0005576",
-                "role": "reader",
                 "source": {
                   "kind": "sidecar",
                   "mathRef": "K1_channel.cellml:K1_channel"
@@ -3278,8 +3262,10 @@
               "units": "fmol",
               "access": "access",
               "value": "",
-              "type": "boundary_condition",
-              "data_reference": null
+              "type": "variable",
+              "data_reference": null,
+              "initialiser": "x_C_Kp_init",
+              "stateRole": "state"
             },
             {
               "name": "mu_O_Kp",
@@ -3302,8 +3288,10 @@
               "units": "fmol",
               "access": "access",
               "value": "",
-              "type": "boundary_condition",
-              "data_reference": null
+              "type": "variable",
+              "data_reference": null,
+              "initialiser": "x_O_Kp_init",
+              "stateRole": "state"
             },
             {
               "name": "Am_Kp",
@@ -3402,6 +3390,14 @@
               "data_reference": "Pan2018; doi:10.1098/rspa.2018.0106"
             },
             {
+              "name": "t",
+              "units": "second",
+              "access": "access",
+              "value": "",
+              "type": "variable",
+              "data_reference": null
+            },
+            {
               "name": "v_Ke_Kp",
               "units": "fmol_per_s",
               "access": "access",
@@ -3423,6 +3419,22 @@
               "access": "access",
               "value": "",
               "type": "variable",
+              "data_reference": null
+            },
+            {
+              "name": "x_C_Kp_init",
+              "units": "fmol",
+              "access": "no_access",
+              "value": "9.6314e-07",
+              "type": "constant",
+              "data_reference": null
+            },
+            {
+              "name": "x_O_Kp_init",
+              "units": "fmol",
+              "access": "no_access",
+              "value": "2.4078e-07",
+              "type": "constant",
               "data_reference": null
             }
           ],
@@ -3553,50 +3565,6 @@
                 "species": [],
                 "location": "GO:0005886",
                 "role": "contributor",
-                "source": {
-                  "kind": "sidecar",
-                  "mathRef": "Kp_channel.cellml:Kp_channel"
-                }
-              }
-            },
-            {
-              "portType": "general_ports",
-              "label": "",
-              "variables": [
-                "x_C_Kp"
-              ],
-              "multiportType": "True",
-              "annotation": {
-                "subject": "https://phlynx.invalid/modules/Kp_channel.cellml#b4da59",
-                "variable": "x_C_Kp",
-                "property": "OPB:00425",
-                "species": [
-                  "CHEBI:29103"
-                ],
-                "location": "GO:0005737",
-                "role": "reader",
-                "source": {
-                  "kind": "sidecar",
-                  "mathRef": "Kp_channel.cellml:Kp_channel"
-                }
-              }
-            },
-            {
-              "portType": "general_ports",
-              "label": "",
-              "variables": [
-                "x_O_Kp"
-              ],
-              "multiportType": "True",
-              "annotation": {
-                "subject": "https://phlynx.invalid/modules/Kp_channel.cellml#b4da5a",
-                "variable": "x_O_Kp",
-                "property": "OPB:00425",
-                "species": [
-                  "CHEBI:29103"
-                ],
-                "location": "GO:0005576",
-                "role": "reader",
                 "source": {
                   "kind": "sidecar",
                   "mathRef": "Kp_channel.cellml:Kp_channel"
@@ -9861,7 +9829,7 @@
               "name": "stimDuration",
               "units": "second",
               "access": "access",
-              "value": "0.1",
+              "value": "0.01",
               "type": "constant",
               "data_reference": "Pan2018; doi:10.1098/rspa.2018.0106"
             },
@@ -9957,17 +9925,15 @@
               "portType": "general_ports",
               "label": "",
               "variables": [
-                "v_Ke_stim"
+                "I_mem_stim"
               ],
               "multiportType": "True",
               "annotation": {
-                "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da56",
-                "variable": "v_Ke_stim",
-                "property": "OPB:00592",
-                "species": [
-                  "CHEBI:29103"
-                ],
-                "location": "GO:0005576",
+                "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da57",
+                "variable": "I_mem_stim",
+                "property": "OPB:00318",
+                "species": [],
+                "location": "GO:0005886",
                 "role": "contributor",
                 "source": {
                   "kind": "sidecar",
@@ -9979,15 +9945,17 @@
               "portType": "general_ports",
               "label": "",
               "variables": [
-                "I_mem_stim"
+                "v_Ke_stim"
               ],
               "multiportType": "True",
               "annotation": {
-                "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da57",
-                "variable": "I_mem_stim",
-                "property": "OPB:00318",
-                "species": [],
-                "location": "GO:0005886",
+                "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da56",
+                "variable": "v_Ke_stim",
+                "property": "OPB:00592",
+                "species": [
+                  "CHEBI:29103"
+                ],
+                "location": "GO:0005576",
                 "role": "contributor",
                 "source": {
                   "kind": "sidecar",
@@ -10009,7 +9977,7 @@
               "side": "left",
               "name": "",
               "slotIndex": 1,
-              "variant": "ghost"
+              "variant": "default"
             },
             {
               "uid": "38401adc-862c-4e16-acd3-3a44daa89299",
@@ -10168,11 +10136,10 @@
           ],
           "parameterisation": "stimulus",
           "bioView": {
-            "order": 0,
+            "order": 7,
             "cell": "dndnode_2",
-            "facet": "lateral",
-            "role": "membraneProtein",
-            "at": "right"
+            "facet": "apical",
+            "role": "membraneProtein"
           }
         }
       }
@@ -10196,8 +10163,8 @@
         },
         "sourceX": 749.4007295835245,
         "sourceY": 394.5146904490636,
-        "targetX": 1038.3283827197606,
-        "targetY": 160.1154341024743
+        "targetX": 1038.3282808867261,
+        "targetY": 160.11540864421568
       },
       {
         "id": "dndnode_3--dndnode_2",
@@ -10311,7 +10278,7 @@
         "sourceX": 519.493564089742,
         "sourceY": 247.3252563785529,
         "targetX": 930.1935156059036,
-        "targetY": 94.10853690332029
+        "targetY": 94.10851144506168
       },
       {
         "id": "dndnode_3--dndnode_7",
@@ -10417,7 +10384,7 @@
         "sourceX": 519.493564089742,
         "sourceY": 222.32657026336778,
         "targetX": 642.9343967382737,
-        "targetY": 460.52158764821763
+        "targetY": 460.5215367317004
       },
       {
         "id": "dndnode_4--dndnode_2",
@@ -10467,52 +10434,6 @@
                   ],
                   "location": "self",
                   "role": "aggregator",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "intracellular.cellml:intracellular"
-                  }
-                }
-              }
-            },
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "x_C_K1"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/K1_channel.cellml#b4da59",
-                  "variable": "x_C_K1",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "GO:0005737",
-                  "role": "reader",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "K1_channel.cellml:K1_channel"
-                  }
-                }
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "x_Ki"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/intracellular.cellml#b4da59",
-                  "variable": "x_Ki",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "self",
-                  "role": "owner",
                   "source": {
                     "kind": "sidecar",
                     "mathRef": "intracellular.cellml:intracellular"
@@ -10577,7 +10498,7 @@
         "sourceX": 886.254424104793,
         "sourceY": 279.02544898562377,
         "targetX": 930.1935156059036,
-        "targetY": 69.10985078813519
+        "targetY": 69.1098253298766
       },
       {
         "id": "dndnode_4--dndnode_7",
@@ -10745,52 +10666,6 @@
                 "portType": "general_ports",
                 "label": "",
                 "variables": [
-                  "x_C_Kp"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/Kp_channel.cellml#b4da59",
-                  "variable": "x_C_Kp",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "GO:0005737",
-                  "role": "reader",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "Kp_channel.cellml:Kp_channel"
-                  }
-                }
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "x_Ki"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/intracellular.cellml#b4da59",
-                  "variable": "x_Ki",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "self",
-                  "role": "owner",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "intracellular.cellml:intracellular"
-                  }
-                }
-              }
-            },
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
                   "mu_Ki"
                 ],
                 "multiportType": "True",
@@ -10843,7 +10718,7 @@
         "sourceX": 1186.6468757147863,
         "sourceY": 213.04640312137758,
         "targetX": 1013.329594771541,
-        "targetY": 160.1154341024743
+        "targetY": 160.11540864421568
       },
       {
         "id": "dndnode_5--dndnode_7",
@@ -10949,7 +10824,7 @@
         "sourceX": 1077.1773848521134,
         "sourceY": 279.02544898562377,
         "targetX": 855.8671642618096,
-        "targetY": 460.52158764821763
+        "targetY": 460.5215367317004
       },
       {
         "id": "dndnode_6--dndnode_2",
@@ -11155,7 +11030,7 @@
         "sourceX": 552.263344126398,
         "sourceY": 489.1089931831587,
         "targetX": 930.1935156059036,
-        "targetY": 119.10722301850538
+        "targetY": 119.10719756024679
       },
       {
         "id": "dndnode_6--dndnode_7",
@@ -11261,7 +11136,7 @@
         "sourceX": 552.263344126398,
         "sourceY": 464.1103070679736,
         "targetX": 642.9343967382737,
-        "targetY": 435.5229015330325
+        "targetY": 435.52295244954973
       },
       {
         "id": "dndnode_8--dndnode_2",
@@ -11374,8 +11249,8 @@
         },
         "sourceX": 1192.0081682219522,
         "sourceY": 356.2875512268988,
-        "targetX": 988.3308068233215,
-        "targetY": 160.1154341024743
+        "targetX": 988.3309086563559,
+        "targetY": 160.11540864421568
       },
       {
         "id": "dndnode_8--dndnode_7",
@@ -11481,7 +11356,7 @@
         "sourceX": 1082.2050723385926,
         "sourceY": 422.2666989241794,
         "targetX": 855.8671642618096,
-        "targetY": 435.5229015330325
+        "targetY": 435.52295244954973
       },
       {
         "id": "dndnode_9--dndnode_2",
@@ -11687,7 +11562,7 @@
         "sourceX": 629.0779508988978,
         "sourceY": 609.1089931831588,
         "targetX": 930.1935156059036,
-        "targetY": 44.111164672950096
+        "targetY": 44.1111392146915
       },
       {
         "id": "dndnode_9--dndnode_7",
@@ -11793,158 +11668,6 @@
         "sourceX": 629.0779508988978,
         "sourceY": 584.1103070679736,
         "targetX": 642.9343967382737,
-        "targetY": 485.52022284688553
-      },
-      {
-        "id": "dndnode_11--dndnode_2",
-        "type": "smoothstep",
-        "source": "dndnode_11",
-        "target": "dndnode_2",
-        "sourceHandle": "handle_8f42382e-ac2d-4e87-b63c-703944de163b",
-        "targetHandle": "handle_21d2992b-6742-46d5-8178-9d4d330dd1b6",
-        "data": {
-          "couplings": [
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "v_Ki_stim"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da55",
-                  "variable": "v_Ki_stim",
-                  "property": "OPB:00592",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "GO:0005737",
-                  "role": "contributor",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "stimulus.cellml:stimulus"
-                  }
-                }
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "v_Ki"
-                ],
-                "multiportType": "Sum",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/intracellular.cellml#b4da56",
-                  "variable": "v_Ki",
-                  "property": "OPB:00592",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "self",
-                  "role": "aggregator",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "intracellular.cellml:intracellular"
-                  }
-                }
-              }
-            }
-          ],
-          "placement": "across"
-        },
-        "label": "",
-        "markerEnd": "arrowclosed",
-        "style": {
-          "strokeWidth": 5
-        },
-        "sourceX": 1163.0151082831228,
-        "sourceY": 536.4536761457748,
-        "targetX": 1088.3534535354868,
-        "targetY": 160.1154341024743
-      },
-      {
-        "id": "dndnode_11--dndnode_7",
-        "type": "smoothstep",
-        "source": "dndnode_11",
-        "target": "dndnode_7",
-        "sourceHandle": "handle_38401adc-862c-4e16-acd3-3a44daa89299",
-        "targetHandle": "handle_4f593457-8639-4f67-a027-91feb99a3b4d",
-        "data": {
-          "couplings": [
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "I_mem_stim"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da57",
-                  "variable": "I_mem_stim",
-                  "property": "OPB:00318",
-                  "species": [],
-                  "location": "GO:0005886",
-                  "role": "contributor",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "stimulus.cellml:stimulus"
-                  }
-                }
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "I_mem"
-                ],
-                "multiportType": "Sum",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/membrane.cellml#b4da55",
-                  "variable": "I_mem",
-                  "property": "OPB:00318",
-                  "species": [],
-                  "location": "self",
-                  "role": "aggregator",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "membrane.cellml:membrane"
-                  }
-                }
-              }
-            }
-          ],
-          "placement": "exchange",
-          "manualCouplings": [
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "I_mem",
-                "variables": [
-                  "I_mem_stim"
-                ],
-                "multiportType": "None"
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "I_mem",
-                "variables": [
-                  "I_mem"
-                ],
-                "multiportType": "Sum"
-              }
-            }
-          ]
-        },
-        "label": "",
-        "markerEnd": "arrowclosed",
-        "style": {
-          "strokeWidth": 5
-        },
-        "sourceX": 1056.9936839651557,
-        "sourceY": 602.460624261446,
-        "targetX": 855.8671642618096,
         "targetY": 485.52022284688553
       },
       {
@@ -12057,7 +11780,7 @@
           "strokeWidth": 5
         },
         "sourceX": 125.72550961552508,
-        "sourceY": 126.49431556740163,
+        "sourceY": 126.49434102566022,
         "targetX": 307.22821027364853,
         "targetY": 247.3252563785529
       },
@@ -12127,7 +11850,7 @@
         "sourceX": 582.0004259367558,
         "sourceY": 75.24974308436475,
         "targetX": 1063.3269670019113,
-        "targetY": 28.129440122556865
+        "targetY": 28.129414664298267
       },
       {
         "id": "dndnode_1--dndnode_4",
@@ -12177,52 +11900,6 @@
                   ],
                   "location": "GO:0005576",
                   "role": "contributor",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "K1_channel.cellml:K1_channel"
-                  }
-                }
-              }
-            },
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "x_Ke"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/extracellular.cellml#b4da59",
-                  "variable": "x_Ke",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "self",
-                  "role": "owner",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "extracellular.cellml:extracellular"
-                  }
-                }
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "x_O_K1"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/K1_channel.cellml#b4da5a",
-                  "variable": "x_O_K1",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "GO:0005576",
-                  "role": "reader",
                   "source": {
                     "kind": "sidecar",
                     "mathRef": "K1_channel.cellml:K1_channel"
@@ -12285,7 +11962,7 @@
           "strokeWidth": 5
         },
         "sourceX": 175.75068226428584,
-        "sourceY": 126.49431556740163,
+        "sourceY": 126.49434102566022,
         "targetX": 667.3152387133782,
         "targetY": 279.02544898562377
       },
@@ -12490,8 +12167,8 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 75.7281373851549,
-        "sourceY": 126.49431556740163,
+        "sourceX": 75.72816284341349,
+        "sourceY": 126.49434102566022,
         "targetX": 340.27599449421024,
         "targetY": 489.1089931831587
       },
@@ -12696,8 +12373,8 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 50.72945126996979,
-        "sourceY": 126.49431556740163,
+        "sourceX": 50.7294767282284,
+        "sourceY": 126.49434102566022,
         "targetX": 417.0628008483195,
         "targetY": 609.1089931831588
       },
@@ -12902,8 +12579,8 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 25.7307651547847,
-        "sourceY": 126.49431556740163,
+        "sourceX": 25.7307906130433,
+        "sourceY": 126.49434102566022,
         "targetX": 730.1935156059036,
         "targetY": 634.1076792983438
       },
@@ -13016,8 +12693,8 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 210.53002121673418,
-        "sourceY": 60.487367451730435,
+        "sourceX": 210.5300721332514,
+        "sourceY": 60.48739290998903,
         "targetX": 1082.2050723385926,
         "targetY": 447.2931854577551
       },
@@ -13081,52 +12758,6 @@
                 "portType": "general_ports",
                 "label": "",
                 "variables": [
-                  "x_Ke"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/extracellular.cellml#b4da59",
-                  "variable": "x_Ke",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "self",
-                  "role": "owner",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "extracellular.cellml:extracellular"
-                  }
-                }
-              },
-              "targetPort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
-                  "x_O_Kp"
-                ],
-                "multiportType": "True",
-                "annotation": {
-                  "subject": "https://phlynx.invalid/modules/Kp_channel.cellml#b4da5a",
-                  "variable": "x_O_Kp",
-                  "property": "OPB:00425",
-                  "species": [
-                    "CHEBI:29103"
-                  ],
-                  "location": "GO:0005576",
-                  "role": "reader",
-                  "source": {
-                    "kind": "sidecar",
-                    "mathRef": "Kp_channel.cellml:Kp_channel"
-                  }
-                }
-              }
-            },
-            {
-              "sourcePort": {
-                "portType": "general_ports",
-                "label": "",
-                "variables": [
                   "mu_Ke"
                 ],
                 "multiportType": "True",
@@ -13176,8 +12807,8 @@
         "style": {
           "strokeWidth": 5
         },
-        "sourceX": 210.53002121673418,
-        "sourceY": 85.48605356691553,
+        "sourceX": 210.5300721332514,
+        "sourceY": 85.48607902517413,
         "targetX": 1077.1773848521134,
         "targetY": 304.0241351008089
       },
@@ -13385,7 +13016,7 @@
         "sourceX": 836.1871395054803,
         "sourceY": 543.1020450674876,
         "targetX": 1063.3269670019113,
-        "targetY": 160.1154341024743
+        "targetY": 160.11540864421568
       },
       {
         "id": "dndnode_10--dndnode_7",
@@ -13492,16 +13123,236 @@
         "sourceY": 543.1020450674876,
         "targetX": 749.4007295835245,
         "targetY": 526.5284848473716
+      },
+      {
+        "id": "dndnode_11--dndnode_2",
+        "type": "smoothstep",
+        "source": "dndnode_11",
+        "target": "dndnode_2",
+        "sourceHandle": "handle_8f42382e-ac2d-4e87-b63c-703944de163b",
+        "targetHandle": "handle_21d2992b-6742-46d5-8178-9d4d330dd1b6",
+        "data": {
+          "couplings": [
+            {
+              "sourcePort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "v_Ki_stim"
+                ],
+                "multiportType": "True",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da55",
+                  "variable": "v_Ki_stim",
+                  "property": "OPB:00592",
+                  "species": [
+                    "CHEBI:29103"
+                  ],
+                  "location": "GO:0005737",
+                  "role": "contributor",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "stimulus.cellml:stimulus"
+                  }
+                }
+              },
+              "targetPort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "v_Ki"
+                ],
+                "multiportType": "Sum",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/intracellular.cellml#b4da56",
+                  "variable": "v_Ki",
+                  "property": "OPB:00592",
+                  "species": [
+                    "CHEBI:29103"
+                  ],
+                  "location": "self",
+                  "role": "aggregator",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "intracellular.cellml:intracellular"
+                  }
+                }
+              }
+            }
+          ],
+          "placement": "across"
+        },
+        "label": "",
+        "markerEnd": "arrowclosed",
+        "style": {
+          "strokeWidth": 5
+        },
+        "sourceX": 1163.0151082831228,
+        "sourceY": 536.4536761457748,
+        "targetX": 1088.3534535354868,
+        "targetY": 160.11540864421568
+      },
+      {
+        "id": "dndnode_11--dndnode_7",
+        "type": "smoothstep",
+        "source": "dndnode_11",
+        "target": "dndnode_7",
+        "sourceHandle": "handle_38401adc-862c-4e16-acd3-3a44daa89299",
+        "targetHandle": "handle_4f593457-8639-4f67-a027-91feb99a3b4d",
+        "data": {
+          "couplings": [
+            {
+              "sourcePort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "I_mem_stim"
+                ],
+                "multiportType": "True",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da57",
+                  "variable": "I_mem_stim",
+                  "property": "OPB:00318",
+                  "species": [],
+                  "location": "GO:0005886",
+                  "role": "contributor",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "stimulus.cellml:stimulus"
+                  }
+                }
+              },
+              "targetPort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "I_mem"
+                ],
+                "multiportType": "Sum",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/membrane.cellml#b4da55",
+                  "variable": "I_mem",
+                  "property": "OPB:00318",
+                  "species": [],
+                  "location": "self",
+                  "role": "aggregator",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "membrane.cellml:membrane"
+                  }
+                }
+              }
+            }
+          ],
+          "placement": "exchange",
+          "manualCouplings": [
+            {
+              "sourcePort": {
+                "portType": "general_ports",
+                "label": "I_mem",
+                "variables": [
+                  "I_mem_stim"
+                ],
+                "multiportType": "None"
+              },
+              "targetPort": {
+                "portType": "general_ports",
+                "label": "I_mem",
+                "variables": [
+                  "I_mem"
+                ],
+                "multiportType": "Sum"
+              }
+            }
+          ]
+        },
+        "label": "",
+        "markerEnd": "arrowclosed",
+        "style": {
+          "strokeWidth": 5
+        },
+        "sourceX": 1056.9936839651557,
+        "sourceY": 602.460624261446,
+        "targetX": 855.8671642618096,
+        "targetY": 485.52022284688553
+      },
+      {
+        "id": "dndnode_1--dndnode_11",
+        "type": "smoothstep",
+        "source": "dndnode_1",
+        "target": "dndnode_11",
+        "sourceHandle": "handle_3c003848-340f-4f51-950f-af73804a2007",
+        "targetHandle": "handle_a095565b-4636-455c-9da4-3996400982a7",
+        "data": {
+          "couplings": [
+            {
+              "sourcePort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "v_Ke"
+                ],
+                "multiportType": "Sum",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/extracellular.cellml#b4da56",
+                  "variable": "v_Ke",
+                  "property": "OPB:00592",
+                  "species": [
+                    "CHEBI:29103"
+                  ],
+                  "location": "self",
+                  "role": "aggregator",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "extracellular.cellml:extracellular"
+                  }
+                }
+              },
+              "targetPort": {
+                "portType": "general_ports",
+                "label": "",
+                "variables": [
+                  "v_Ke_stim"
+                ],
+                "multiportType": "True",
+                "annotation": {
+                  "subject": "https://phlynx.invalid/modules/stimulus.cellml#b4da56",
+                  "variable": "v_Ke_stim",
+                  "property": "OPB:00592",
+                  "species": [
+                    "CHEBI:29103"
+                  ],
+                  "location": "GO:0005576",
+                  "role": "contributor",
+                  "source": {
+                    "kind": "sidecar",
+                    "mathRef": "stimulus.cellml:stimulus"
+                  }
+                }
+              }
+            }
+          ],
+          "placement": "across"
+        },
+        "label": "",
+        "markerEnd": "arrowclosed",
+        "style": {
+          "strokeWidth": 5
+        },
+        "sourceX": 210.5300721332514,
+        "sourceY": 35.48875771132114,
+        "targetX": 1056.9936839651557,
+        "targetY": 577.4619381462609
       }
     ],
     "position": [
-      472.0948404613023,
-      140.52860976694421
+      25.094840461302283,
+      181.52860976694421
     ],
     "zoom": 0.5993654434693231,
     "viewport": {
-      "x": 472.0948404613023,
-      "y": 140.52860976694421,
+      "x": 25.094840461302283,
+      "y": 181.52860976694421,
       "zoom": 0.5993654434693231
     }
   },
@@ -15125,11 +14976,11 @@
       ],
       [
         "K1_channel.cellml:K1_channel",
-        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<model xmlns=\"http://www.cellml.org/cellml/2.0#\" name=\"PhLynxComponent\">\n  <component name=\"K1_channel\">\n    <variable name=\"mu_C_K1\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"R\" units=\"J_per_mol_K\" interface=\"public\"/>\n    <variable name=\"T\" units=\"kelvin\" interface=\"public\"/>\n    <variable name=\"K_C_K1\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_C_K1\" units=\"fmol\" interface=\"public\" id=\"b4da59\"/>\n    <variable name=\"mu_O_K1\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"K_O_K1\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_O_K1\" units=\"fmol\" interface=\"public\" id=\"b4da5a\"/>\n    <variable name=\"Am_K1\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"zK\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"F\" units=\"C_per_mol\" interface=\"public\"/>\n    <variable name=\"V_mem\" units=\"volt\" interface=\"public\" id=\"b4da55\"/>\n    <variable name=\"v_K1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_K1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"mu_Ki\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5b\"/>\n    <variable name=\"nK\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"mu_Ke\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5c\"/>\n    <variable name=\"v_gK1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_gK1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"z_fK1\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"z_rK1\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"v_Ke_K1\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da56\"/>\n    <variable name=\"v_Ki_K1\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da57\"/>\n    <variable name=\"I_mem_K1\" units=\"fA\" interface=\"public\" id=\"b4da58\"/>\n    <math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:cellml=\"http://www.cellml.org/cellml/2.0#\">\n      <apply>\n        <eq/>\n        <ci>mu_C_K1</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_C_K1</ci>\n              <ci>x_C_K1</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>mu_O_K1</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_O_K1</ci>\n              <ci>x_O_K1</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>Am_K1</ci>\n        <apply>\n          <times/>\n          <ci>zK</ci>\n          <ci>F</ci>\n          <ci>V_mem</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_K1</ci>\n        <piecewise>\n          <piece>\n            <apply>\n              <times/>\n              <ci>kappa_K1</ci>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <eq/>\n              <ci>Am_K1</ci>\n              <cn cellml:units=\"J_per_mol\">0</cn>\n            </apply>\n          </piece>\n          <otherwise>\n            <apply>\n              <times/>\n              <apply>\n                <divide/>\n                <apply>\n                  <divide/>\n                  <apply>\n                    <times/>\n                    <ci>kappa_K1</ci>\n                    <ci>Am_K1</ci>\n                  </apply>\n                  <apply>\n                    <times/>\n                    <ci>R</ci>\n                    <ci>T</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <minus/>\n                  <apply>\n                    <exp/>\n                    <apply>\n                      <divide/>\n                      <ci>Am_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>R</ci>\n                        <ci>T</ci>\n                      </apply>\n                    </apply>\n                  </apply>\n                  <cn cellml:units=\"dimensionless\">1</cn>\n                </apply>\n              </apply>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n          </otherwise>\n        </piecewise>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_gK1</ci>\n        <apply>\n          <times/>\n          <ci>kappa_gK1</ci>\n          <apply>\n            <minus/>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_C_K1</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_fK1</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_O_K1</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_rK1</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ke_K1</ci>\n        <ci>v_K1</ci>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ki_K1</ci>\n        <apply>\n          <minus/>\n          <ci>v_K1</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>I_mem_K1</ci>\n        <apply>\n          <minus/>\n          <apply>\n            <times/>\n            <ci>F</ci>\n            <apply>\n              <plus/>\n              <apply>\n                <times/>\n                <ci>zK</ci>\n                <ci>v_K1</ci>\n              </apply>\n              <apply>\n                <times/>\n                <apply>\n                  <minus/>\n                  <ci>z_fK1</ci>\n                  <ci>z_rK1</ci>\n                </apply>\n                <ci>v_gK1</ci>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n    </math>\n  </component>\n</model>"
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<model xmlns=\"http://www.cellml.org/cellml/2.0#\" name=\"PhLynxComponent\">\n  <component name=\"K1_channel\">\n    <variable name=\"mu_C_K1\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"R\" units=\"J_per_mol_K\" interface=\"public\"/>\n    <variable name=\"T\" units=\"kelvin\" interface=\"public\"/>\n    <variable name=\"K_C_K1\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_C_K1\" units=\"fmol\" initial_value=\"x_C_K1_init\" interface=\"public\" id=\"b4da59\"/>\n    <variable name=\"mu_O_K1\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"K_O_K1\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_O_K1\" units=\"fmol\" initial_value=\"x_O_K1_init\" interface=\"public\" id=\"b4da5a\"/>\n    <variable name=\"Am_K1\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"zK\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"F\" units=\"C_per_mol\" interface=\"public\"/>\n    <variable name=\"V_mem\" units=\"volt\" interface=\"public\" id=\"b4da55\"/>\n    <variable name=\"v_K1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_K1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"mu_Ki\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5b\"/>\n    <variable name=\"nK\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"mu_Ke\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5c\"/>\n    <variable name=\"v_gK1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_gK1\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"z_fK1\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"z_rK1\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"t\" units=\"second\" interface=\"public\"/>\n    <variable name=\"v_Ke_K1\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da56\"/>\n    <variable name=\"v_Ki_K1\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da57\"/>\n    <variable name=\"I_mem_K1\" units=\"fA\" interface=\"public\" id=\"b4da58\"/>\n    <variable name=\"x_C_K1_init\" units=\"fmol\" interface=\"public\"/>\n    <variable name=\"x_O_K1_init\" units=\"fmol\" interface=\"public\"/>\n    <math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:cellml=\"http://www.cellml.org/cellml/2.0#\">\n      <apply>\n        <eq/>\n        <ci>mu_C_K1</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_C_K1</ci>\n              <ci>x_C_K1</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>mu_O_K1</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_O_K1</ci>\n              <ci>x_O_K1</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>Am_K1</ci>\n        <apply>\n          <times/>\n          <ci>zK</ci>\n          <ci>F</ci>\n          <ci>V_mem</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_K1</ci>\n        <piecewise>\n          <piece>\n            <apply>\n              <times/>\n              <ci>kappa_K1</ci>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <eq/>\n              <ci>Am_K1</ci>\n              <cn cellml:units=\"J_per_mol\">0</cn>\n            </apply>\n          </piece>\n          <otherwise>\n            <apply>\n              <times/>\n              <apply>\n                <divide/>\n                <apply>\n                  <divide/>\n                  <apply>\n                    <times/>\n                    <ci>kappa_K1</ci>\n                    <ci>Am_K1</ci>\n                  </apply>\n                  <apply>\n                    <times/>\n                    <ci>R</ci>\n                    <ci>T</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <minus/>\n                  <apply>\n                    <exp/>\n                    <apply>\n                      <divide/>\n                      <ci>Am_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>R</ci>\n                        <ci>T</ci>\n                      </apply>\n                    </apply>\n                  </apply>\n                  <cn cellml:units=\"dimensionless\">1</cn>\n                </apply>\n              </apply>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_K1</ci>\n                      <apply>\n                        <times/>\n                        <ci>nK</ci>\n                        <ci>mu_Ke</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n          </otherwise>\n        </piecewise>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_gK1</ci>\n        <apply>\n          <times/>\n          <ci>kappa_gK1</ci>\n          <apply>\n            <minus/>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_C_K1</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_fK1</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_O_K1</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_rK1</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <apply>\n          <diff/>\n          <bvar>\n            <ci>t</ci>\n          </bvar>\n          <ci>x_C_K1</ci>\n        </apply>\n        <apply>\n          <minus/>\n          <ci>v_gK1</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <apply>\n          <diff/>\n          <bvar>\n            <ci>t</ci>\n          </bvar>\n          <ci>x_O_K1</ci>\n        </apply>\n        <ci>v_gK1</ci>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ke_K1</ci>\n        <ci>v_K1</ci>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ki_K1</ci>\n        <apply>\n          <minus/>\n          <ci>v_K1</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>I_mem_K1</ci>\n        <apply>\n          <minus/>\n          <apply>\n            <times/>\n            <ci>F</ci>\n            <apply>\n              <plus/>\n              <apply>\n                <times/>\n                <ci>zK</ci>\n                <ci>v_K1</ci>\n              </apply>\n              <apply>\n                <times/>\n                <apply>\n                  <minus/>\n                  <ci>z_fK1</ci>\n                  <ci>z_rK1</ci>\n                </apply>\n                <ci>v_gK1</ci>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n    </math>\n  </component>\n</model>"
       ],
       [
         "Kp_channel.cellml:Kp_channel",
-        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<model xmlns=\"http://www.cellml.org/cellml/2.0#\" name=\"PhLynxComponent\">\n  <component name=\"Kp_channel\">\n    <variable name=\"mu_C_Kp\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"R\" units=\"J_per_mol_K\" interface=\"public\"/>\n    <variable name=\"T\" units=\"kelvin\" interface=\"public\"/>\n    <variable name=\"K_C_Kp\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_C_Kp\" units=\"fmol\" interface=\"public\" id=\"b4da59\"/>\n    <variable name=\"mu_O_Kp\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"K_O_Kp\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_O_Kp\" units=\"fmol\" interface=\"public\" id=\"b4da5a\"/>\n    <variable name=\"Am_Kp\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"zK\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"F\" units=\"C_per_mol\" interface=\"public\"/>\n    <variable name=\"V_mem\" units=\"volt\" interface=\"public\" id=\"b4da55\"/>\n    <variable name=\"v_Kp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_Kp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"mu_Ki\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5b\"/>\n    <variable name=\"mu_Ke\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5c\"/>\n    <variable name=\"v_gKp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_gKp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"z_f_Kp\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"z_r_Kp\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"v_Ke_Kp\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da56\"/>\n    <variable name=\"v_Ki_Kp\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da57\"/>\n    <variable name=\"I_mem_Kp\" units=\"fA\" interface=\"public\" id=\"b4da58\"/>\n    <math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:cellml=\"http://www.cellml.org/cellml/2.0#\">\n      <apply>\n        <eq/>\n        <ci>mu_C_Kp</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_C_Kp</ci>\n              <ci>x_C_Kp</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>mu_O_Kp</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_O_Kp</ci>\n              <ci>x_O_Kp</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>Am_Kp</ci>\n        <apply>\n          <times/>\n          <ci>zK</ci>\n          <ci>F</ci>\n          <ci>V_mem</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Kp</ci>\n        <piecewise>\n          <piece>\n            <apply>\n              <times/>\n              <ci>kappa_Kp</ci>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_Kp</ci>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_Kp</ci>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <eq/>\n              <ci>Am_Kp</ci>\n              <cn cellml:units=\"J_per_mol\">0</cn>\n            </apply>\n          </piece>\n          <otherwise>\n            <apply>\n              <times/>\n              <apply>\n                <divide/>\n                <apply>\n                  <divide/>\n                  <apply>\n                    <times/>\n                    <ci>kappa_Kp</ci>\n                    <ci>Am_Kp</ci>\n                  </apply>\n                  <apply>\n                    <times/>\n                    <ci>R</ci>\n                    <ci>T</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <minus/>\n                  <apply>\n                    <exp/>\n                    <apply>\n                      <divide/>\n                      <ci>Am_Kp</ci>\n                      <apply>\n                        <times/>\n                        <ci>R</ci>\n                        <ci>T</ci>\n                      </apply>\n                    </apply>\n                  </apply>\n                  <cn cellml:units=\"dimensionless\">1</cn>\n                </apply>\n              </apply>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_Kp</ci>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_Kp</ci>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n          </otherwise>\n        </piecewise>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_gKp</ci>\n        <apply>\n          <times/>\n          <ci>kappa_gKp</ci>\n          <apply>\n            <minus/>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_C_Kp</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_f_Kp</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_O_Kp</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_r_Kp</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ke_Kp</ci>\n        <ci>v_Kp</ci>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ki_Kp</ci>\n        <apply>\n          <minus/>\n          <ci>v_Kp</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>I_mem_Kp</ci>\n        <apply>\n          <minus/>\n          <apply>\n            <times/>\n            <ci>F</ci>\n            <apply>\n              <plus/>\n              <apply>\n                <times/>\n                <ci>zK</ci>\n                <ci>v_Kp</ci>\n              </apply>\n              <apply>\n                <times/>\n                <apply>\n                  <minus/>\n                  <ci>z_f_Kp</ci>\n                  <ci>z_r_Kp</ci>\n                </apply>\n                <ci>v_gKp</ci>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n    </math>\n  </component>\n</model>"
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<model xmlns=\"http://www.cellml.org/cellml/2.0#\" name=\"PhLynxComponent\">\n  <component name=\"Kp_channel\">\n    <variable name=\"mu_C_Kp\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"R\" units=\"J_per_mol_K\" interface=\"public\"/>\n    <variable name=\"T\" units=\"kelvin\" interface=\"public\"/>\n    <variable name=\"K_C_Kp\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_C_Kp\" units=\"fmol\" initial_value=\"x_C_Kp_init\" interface=\"public\" id=\"b4da59\"/>\n    <variable name=\"mu_O_Kp\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"K_O_Kp\" units=\"per_fmol\" interface=\"public\"/>\n    <variable name=\"x_O_Kp\" units=\"fmol\" initial_value=\"x_O_Kp_init\" interface=\"public\" id=\"b4da5a\"/>\n    <variable name=\"Am_Kp\" units=\"J_per_mol\" interface=\"public\"/>\n    <variable name=\"zK\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"F\" units=\"C_per_mol\" interface=\"public\"/>\n    <variable name=\"V_mem\" units=\"volt\" interface=\"public\" id=\"b4da55\"/>\n    <variable name=\"v_Kp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_Kp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"mu_Ki\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5b\"/>\n    <variable name=\"mu_Ke\" units=\"J_per_mol\" interface=\"public\" id=\"b4da5c\"/>\n    <variable name=\"v_gKp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"kappa_gKp\" units=\"fmol_per_s\" interface=\"public\"/>\n    <variable name=\"z_f_Kp\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"z_r_Kp\" units=\"dimensionless\" interface=\"public\"/>\n    <variable name=\"t\" units=\"second\" interface=\"public\"/>\n    <variable name=\"v_Ke_Kp\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da56\"/>\n    <variable name=\"v_Ki_Kp\" units=\"fmol_per_s\" interface=\"public\" id=\"b4da57\"/>\n    <variable name=\"I_mem_Kp\" units=\"fA\" interface=\"public\" id=\"b4da58\"/>\n    <variable name=\"x_C_Kp_init\" units=\"fmol\" interface=\"public\"/>\n    <variable name=\"x_O_Kp_init\" units=\"fmol\" interface=\"public\"/>\n    <math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:cellml=\"http://www.cellml.org/cellml/2.0#\">\n      <apply>\n        <eq/>\n        <ci>mu_C_Kp</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_C_Kp</ci>\n              <ci>x_C_Kp</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>mu_O_Kp</ci>\n        <apply>\n          <times/>\n          <ci>R</ci>\n          <ci>T</ci>\n          <apply>\n            <ln/>\n            <apply>\n              <times/>\n              <ci>K_O_Kp</ci>\n              <ci>x_O_Kp</ci>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>Am_Kp</ci>\n        <apply>\n          <times/>\n          <ci>zK</ci>\n          <ci>F</ci>\n          <ci>V_mem</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Kp</ci>\n        <piecewise>\n          <piece>\n            <apply>\n              <times/>\n              <ci>kappa_Kp</ci>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_Kp</ci>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_Kp</ci>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <eq/>\n              <ci>Am_Kp</ci>\n              <cn cellml:units=\"J_per_mol\">0</cn>\n            </apply>\n          </piece>\n          <otherwise>\n            <apply>\n              <times/>\n              <apply>\n                <divide/>\n                <apply>\n                  <divide/>\n                  <apply>\n                    <times/>\n                    <ci>kappa_Kp</ci>\n                    <ci>Am_Kp</ci>\n                  </apply>\n                  <apply>\n                    <times/>\n                    <ci>R</ci>\n                    <ci>T</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <minus/>\n                  <apply>\n                    <exp/>\n                    <apply>\n                      <divide/>\n                      <ci>Am_Kp</ci>\n                      <apply>\n                        <times/>\n                        <ci>R</ci>\n                        <ci>T</ci>\n                      </apply>\n                    </apply>\n                  </apply>\n                  <cn cellml:units=\"dimensionless\">1</cn>\n                </apply>\n              </apply>\n              <apply>\n                <minus/>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ki</ci>\n                      <ci>mu_O_Kp</ci>\n                      <apply>\n                        <times/>\n                        <ci>zK</ci>\n                        <ci>F</ci>\n                        <ci>V_mem</ci>\n                      </apply>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n                <apply>\n                  <exp/>\n                  <apply>\n                    <divide/>\n                    <apply>\n                      <plus/>\n                      <ci>mu_Ke</ci>\n                      <ci>mu_O_Kp</ci>\n                    </apply>\n                    <apply>\n                      <times/>\n                      <ci>R</ci>\n                      <ci>T</ci>\n                    </apply>\n                  </apply>\n                </apply>\n              </apply>\n            </apply>\n          </otherwise>\n        </piecewise>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_gKp</ci>\n        <apply>\n          <times/>\n          <ci>kappa_gKp</ci>\n          <apply>\n            <minus/>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_C_Kp</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_f_Kp</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n            <apply>\n              <exp/>\n              <apply>\n                <divide/>\n                <apply>\n                  <plus/>\n                  <ci>mu_O_Kp</ci>\n                  <apply>\n                    <times/>\n                    <ci>z_r_Kp</ci>\n                    <ci>F</ci>\n                    <ci>V_mem</ci>\n                  </apply>\n                </apply>\n                <apply>\n                  <times/>\n                  <ci>R</ci>\n                  <ci>T</ci>\n                </apply>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <apply>\n          <diff/>\n          <bvar>\n            <ci>t</ci>\n          </bvar>\n          <ci>x_C_Kp</ci>\n        </apply>\n        <apply>\n          <minus/>\n          <ci>v_gKp</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <apply>\n          <diff/>\n          <bvar>\n            <ci>t</ci>\n          </bvar>\n          <ci>x_O_Kp</ci>\n        </apply>\n        <ci>v_gKp</ci>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ke_Kp</ci>\n        <ci>v_Kp</ci>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>v_Ki_Kp</ci>\n        <apply>\n          <minus/>\n          <ci>v_Kp</ci>\n        </apply>\n      </apply>\n      <apply>\n        <eq/>\n        <ci>I_mem_Kp</ci>\n        <apply>\n          <minus/>\n          <apply>\n            <times/>\n            <ci>F</ci>\n            <apply>\n              <plus/>\n              <apply>\n                <times/>\n                <ci>zK</ci>\n                <ci>v_Kp</ci>\n              </apply>\n              <apply>\n                <times/>\n                <apply>\n                  <minus/>\n                  <ci>z_f_Kp</ci>\n                  <ci>z_r_Kp</ci>\n                </apply>\n                <ci>v_gKp</ci>\n              </apply>\n            </apply>\n          </apply>\n        </apply>\n      </apply>\n    </math>\n  </component>\n</model>"
       ],
       [
         "LCC.cellml:LCC",
@@ -87355,7 +87206,7 @@
               "value": null,
               "units": "fmol",
               "access": "access",
-              "type": "boundary_condition",
+              "type": "variable",
               "data_reference": null
             },
             {
@@ -87379,7 +87230,7 @@
               "value": null,
               "units": "fmol",
               "access": "access",
-              "type": "boundary_condition",
+              "type": "variable",
               "data_reference": null
             },
             {
@@ -87487,6 +87338,14 @@
               "data_reference": null
             },
             {
+              "name": "t",
+              "value": null,
+              "units": "second",
+              "access": "access",
+              "type": "variable",
+              "data_reference": null
+            },
+            {
               "name": "v_Ke_K1",
               "value": null,
               "units": "fmol_per_s",
@@ -87508,6 +87367,22 @@
               "units": "fA",
               "access": "access",
               "type": "variable",
+              "data_reference": null
+            },
+            {
+              "name": "x_C_K1_init",
+              "value": null,
+              "units": "fmol",
+              "access": "no_access",
+              "type": "constant",
+              "data_reference": null
+            },
+            {
+              "name": "x_O_K1_init",
+              "value": null,
+              "units": "fmol",
+              "access": "no_access",
+              "type": "constant",
               "data_reference": null
             }
           ],
@@ -87607,7 +87482,7 @@
               "value": null,
               "units": "fmol",
               "access": "access",
-              "type": "boundary_condition",
+              "type": "variable",
               "data_reference": null
             },
             {
@@ -87631,7 +87506,7 @@
               "value": null,
               "units": "fmol",
               "access": "access",
-              "type": "boundary_condition",
+              "type": "variable",
               "data_reference": null
             },
             {
@@ -87731,6 +87606,14 @@
               "data_reference": null
             },
             {
+              "name": "t",
+              "value": null,
+              "units": "",
+              "access": "access",
+              "type": "variable",
+              "data_reference": null
+            },
+            {
               "name": "v_Ke_Kp",
               "value": null,
               "units": "fmol_per_s",
@@ -87752,6 +87635,22 @@
               "units": "fA",
               "access": "access",
               "type": "variable",
+              "data_reference": null
+            },
+            {
+              "name": "x_C_Kp_init",
+              "value": null,
+              "units": "fmol",
+              "access": "no_access",
+              "type": "constant",
+              "data_reference": null
+            },
+            {
+              "name": "x_O_Kp_init",
+              "value": null,
+              "units": "fmol",
+              "access": "no_access",
+              "type": "constant",
               "data_reference": null
             }
           ],
@@ -95997,6 +95896,138 @@
             }
           ]
         }
+      ],
+      [
+        "Kp_channel.cellml:Kp_channel",
+        {
+          "format": "cellml-text-layout",
+          "version": 1,
+          "components": [
+            {
+              "name": "Kp_channel",
+              "leading": [],
+              "statements": [
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "mu_C_Kp = R * T * ln(K_C_Kp * x_C_Kp);"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "mu_O_Kp = R * T * ln(K_O_Kp * x_O_Kp);"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "Am_Kp = zK * F * V_mem;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_Kp = sel\n  case Am_Kp == 0 {J_per_mol}: kappa_Kp * (exp((mu_Ki + mu_O_Kp + zK * F * V_mem) / (R * T)) - exp((mu_Ke + mu_O_Kp) / (R * T)));\n  otherwise: kappa_Kp * Am_Kp / (R * T) / (exp(Am_Kp / (R * T)) - 1) * (exp((mu_Ki + mu_O_Kp + zK * F * V_mem) / (R * T)) - exp((mu_Ke + mu_O_Kp) / (R * T)));\nendsel;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_gKp = kappa_gKp * (exp((mu_C_Kp + z_f_Kp * F * V_mem) / (R * T)) - exp((mu_O_Kp + z_r_Kp * F * V_mem) / (R * T)));"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "ode(x_C_Kp, t) = -v_gKp;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "ode(x_O_Kp, t) = v_gKp;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_Ke_Kp = v_Kp;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_Ki_Kp = -v_Kp;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "I_mem_Kp = -(F * (zK * v_Kp + (z_f_Kp - z_r_Kp) * v_gKp));"
+                }
+              ],
+              "footer": []
+            }
+          ]
+        }
+      ],
+      [
+        "K1_channel.cellml:K1_channel",
+        {
+          "format": "cellml-text-layout",
+          "version": 1,
+          "components": [
+            {
+              "name": "K1_channel",
+              "leading": [],
+              "statements": [
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "mu_C_K1 = R * T * ln(K_C_K1 * x_C_K1);"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "mu_O_K1 = R * T * ln(K_O_K1 * x_O_K1);"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "Am_K1 = zK * F * V_mem;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_K1 = sel\n  case Am_K1 == 0 {J_per_mol}: kappa_K1 * (exp((mu_Ki + mu_O_K1 + nK * mu_Ke + zK * F * V_mem) / (R * T)) - exp((mu_Ke + mu_O_K1 + nK * mu_Ke) / (R * T)));\n  otherwise: kappa_K1 * Am_K1 / (R * T) / (exp(Am_K1 / (R * T)) - 1) * (exp((mu_Ki + mu_O_K1 + nK * mu_Ke + zK * F * V_mem) / (R * T)) - exp((mu_Ke + mu_O_K1 + nK * mu_Ke) / (R * T)));\nendsel;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_gK1 = kappa_gK1 * (exp((mu_C_K1 + z_fK1 * F * V_mem) / (R * T)) - exp((mu_O_K1 + z_rK1 * F * V_mem) / (R * T)));"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "ode(x_C_K1, t) = -v_gK1;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "ode(x_O_K1, t) = v_gK1;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_Ke_K1 = v_K1;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "v_Ki_K1 = -v_K1;"
+                },
+                {
+                  "kind": "eq",
+                  "leading": [],
+                  "text": "I_mem_K1 = -(F * (zK * v_K1 + (z_fK1 - z_rK1) * v_gK1));"
+                }
+              ],
+              "footer": []
+            }
+          ]
+        }
       ]
     ],
     "mathSources": [],
@@ -96015,11 +96046,11 @@
       ],
       [
         "K1_channel.cellml:K1_channel",
-        "@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .\n@prefix semsim: <http://bime.uw.edu/semsim/> .\n@prefix opb: <https://identifiers.org/opb/OPB_> .\n@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .\n@prefix go: <https://identifiers.org/go/GO:> .\n@prefix uniprot: <https://identifiers.org/uniprot/> .\n@prefix m: <./K1_channel.cellml#> .\n@prefix local: <./K1_channel.ttl#> .\n\nm:K1_channel bqbiol:is uniprot:O00180 .\nlocal:entity_self bqbiol:is uniprot:O00180 ;\n    bqbiol:isPartOf go:0005886 .\nlocal:outside bqbiol:is go:0005576 .\nlocal:inside bqbiol:is go:0005737 .\nm:b4da55 bqbiol:isVersionOf opb:00506 ;\n    bqbiol:isPropertyOf local:plasma_membrane .\nlocal:plasma_membrane bqbiol:is go:0005886 .\nm:b4da56 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da56 .\nlocal:process_b4da56 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .\nlocal:K_in bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:inside .\nlocal:K_out bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:outside .\nm:b4da57 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da57 .\nlocal:process_b4da57 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .\nm:b4da58 bqbiol:isVersionOf opb:00318 ;\n    bqbiol:isPropertyOf local:process_b4da58 .\nlocal:process_b4da58 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:plasma_membrane ] .\nm:b4da59 bqbiol:isVersionOf opb:00425 ;\n    bqbiol:isPropertyOf local:K_in .\nm:b4da5a bqbiol:isVersionOf opb:00425 ;\n    bqbiol:isPropertyOf local:K_out .\nm:b4da5b bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_in .\nm:b4da5c bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_out .\n"
+        "@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .\n@prefix semsim: <http://bime.uw.edu/semsim/> .\n@prefix opb: <https://identifiers.org/opb/OPB_> .\n@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .\n@prefix go: <https://identifiers.org/go/GO:> .\n@prefix uniprot: <https://identifiers.org/uniprot/> .\n@prefix m: <./K1_channel.cellml#> .\n@prefix local: <./K1_channel.ttl#> .\n\nm:K1_channel bqbiol:is uniprot:O00180 .\nlocal:entity_self bqbiol:is uniprot:O00180 ;\n    bqbiol:isPartOf go:0005886 .\nlocal:outside bqbiol:is go:0005576 .\nlocal:inside bqbiol:is go:0005737 .\nm:b4da55 bqbiol:isVersionOf opb:00506 ;\n    bqbiol:isPropertyOf local:plasma_membrane .\nlocal:plasma_membrane bqbiol:is go:0005886 .\nm:b4da56 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da56 .\nlocal:process_b4da56 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .\nlocal:K_in bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:inside .\nlocal:K_out bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:outside .\nm:b4da57 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da57 .\nlocal:process_b4da57 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .\nm:b4da58 bqbiol:isVersionOf opb:00318 ;\n    bqbiol:isPropertyOf local:process_b4da58 .\nlocal:process_b4da58 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:plasma_membrane ] .\nm:b4da5b bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_in .\nm:b4da5c bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_out .\n"
       ],
       [
         "Kp_channel.cellml:Kp_channel",
-        "@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .\n@prefix semsim: <http://bime.uw.edu/semsim/> .\n@prefix opb: <https://identifiers.org/opb/OPB_> .\n@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .\n@prefix go: <https://identifiers.org/go/GO:> .\n@prefix uniprot: <https://identifiers.org/uniprot/> .\n@prefix m: <./Kp_channel.cellml#> .\n@prefix local: <./Kp_channel.ttl#> .\n\nm:Kp_channel bqbiol:is uniprot:Q96KK3 .\nlocal:entity_self bqbiol:is uniprot:Q96KK3 ;\n    bqbiol:isPartOf go:0005886 .\nlocal:outside bqbiol:is go:0005576 .\nlocal:inside bqbiol:is go:0005737 .\nm:b4da55 bqbiol:isVersionOf opb:00506 ;\n    bqbiol:isPropertyOf local:plasma_membrane .\nlocal:plasma_membrane bqbiol:is go:0005886 .\nm:b4da56 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da56 .\nlocal:process_b4da56 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .\nlocal:K_in bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:inside .\nlocal:K_out bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:outside .\nm:b4da57 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da57 .\nlocal:process_b4da57 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .\nm:b4da58 bqbiol:isVersionOf opb:00318 ;\n    bqbiol:isPropertyOf local:process_b4da58 .\nlocal:process_b4da58 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:plasma_membrane ] .\nm:b4da59 bqbiol:isVersionOf opb:00425 ;\n    bqbiol:isPropertyOf local:K_in .\nm:b4da5a bqbiol:isVersionOf opb:00425 ;\n    bqbiol:isPropertyOf local:K_out .\nm:b4da5b bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_in .\nm:b4da5c bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_out .\n"
+        "@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .\n@prefix semsim: <http://bime.uw.edu/semsim/> .\n@prefix opb: <https://identifiers.org/opb/OPB_> .\n@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .\n@prefix go: <https://identifiers.org/go/GO:> .\n@prefix uniprot: <https://identifiers.org/uniprot/> .\n@prefix m: <./Kp_channel.cellml#> .\n@prefix local: <./Kp_channel.ttl#> .\n\nm:Kp_channel bqbiol:is uniprot:Q96KK3 .\nlocal:entity_self bqbiol:is uniprot:Q96KK3 ;\n    bqbiol:isPartOf go:0005886 .\nlocal:outside bqbiol:is go:0005576 .\nlocal:inside bqbiol:is go:0005737 .\nm:b4da55 bqbiol:isVersionOf opb:00506 ;\n    bqbiol:isPropertyOf local:plasma_membrane .\nlocal:plasma_membrane bqbiol:is go:0005886 .\nm:b4da56 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da56 .\nlocal:process_b4da56 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .\nlocal:K_in bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:inside .\nlocal:K_out bqbiol:is chebi:29103 ;\n    bqbiol:isPartOf local:outside .\nm:b4da57 bqbiol:isVersionOf opb:00592 ;\n    bqbiol:isPropertyOf local:process_b4da57 .\nlocal:process_b4da57 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;\n    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .\nm:b4da58 bqbiol:isVersionOf opb:00318 ;\n    bqbiol:isPropertyOf local:process_b4da58 .\nlocal:process_b4da58 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:plasma_membrane ] .\nm:b4da5b bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_in .\nm:b4da5c bqbiol:isVersionOf opb:00378 ;\n    bqbiol:isPropertyOf local:K_out .\n"
       ],
       [
         "LCC.cellml:LCC",
@@ -96055,10 +96086,10 @@
     "simulationSettings": {
       "pointInterval": 0.001,
       "startingPoint": 0,
-      "endingPoint": 1,
+      "endingPoint": 10,
       "initialPoint": 0,
       "solver": "CVODE",
-      "timeStep": 0.01,
+      "timeStep": 0.001,
       "tolerance": 1e-12,
       "maxSteps": 10000
     },
